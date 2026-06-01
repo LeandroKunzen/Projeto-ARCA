@@ -19,7 +19,7 @@
       <li><a href="">Solicitações</a></li>
       <li><a href="">Saiba Mais</a></li>
       <li>
-        <button id="Perfil"><img src="images/Profile.png" alt="Perfil" width="40"></button>
+        <button id="perfil"><img src="images/Profile.png" alt="Perfil" width="40"></button>
       </li>
     </ul>
   </nav>
@@ -41,7 +41,7 @@
         <br><br>
       </div>
       <div class="entrar">
-        <input type="button" value="Entrar" id="login">
+        <button id="login" onclick="logar()">Entrar</button>
         <a href="" id="forgotPass">Esqueci minha senha</a>
       </div>
       <br>
@@ -49,8 +49,8 @@
         <span>ou entrar usando:</span>
       </div>
       <br>
-      <button id="facebook">Facebook</button>
-      <button id="google">Google</button>
+      <button id="facebook" onclick="facebook()">Facebook</button>
+      <button id="google" onclick="google()">Google</button>
     </div>
   </div>
   </div>
@@ -61,6 +61,7 @@
       Rua Maestro Antônio Cícero, 111, Caçaroca, Prefeitura, Serra/ES, CEP 29176-11
     </p>
   </footer>
+  <script src="login.js"></script>
 </body>
 
 </html>
