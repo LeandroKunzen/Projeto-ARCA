@@ -152,6 +152,13 @@ nav a:hover {
 
 #login {
     background-color: #3D1B07;
+    color: #ffffff;
+}
+
+#login:hover,
+#facebook:hover,
+#google:hover {
+    cursor: pointer;
 }
 
 #login,
@@ -223,7 +230,7 @@ html, body {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
-    background-color: #F9AF58;
+    background-color: #f9af58;
     border-radius: 15px;
 }
 
@@ -248,5 +255,6 @@ footer {
 }
 
 #perfil {
-    border-radius: 100%;
+    border: none;
+    background-color: transparent;
 }
