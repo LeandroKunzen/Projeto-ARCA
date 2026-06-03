@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <header>
+  <div class="logo">Projeto ARCA</div>
+  <nav>
+    <ul>
+      <li><a href="">Agende uma Consulta</a></li>
+      <li><a href="">Adoção</a></li>
+      <li><a href="">Denúncias</a></li>
+      <li><a href="">Solicitações</a></li>
+      <li><a href="">Saiba Mais</a></li>
+      <li>
+        <button id="perfil"><img src="images/Profile.png" alt="Perfil" width="40"></button>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="principal">
+  <div class="content">
+    <div id="modal">
+      <div id="mudarSenha_conteudo">
+        <span id="fechar">&times;</span>
+        <h2>Recuperar Senha</h2>
+        <br><br>
+        <label for="email">Email de recuperação</label>
+        <br><br>
+        <input type="email">
+        <button id="enviarEmail" class="botao">Enviar</button>
+      </div>
+    </div>
+    <div class="imagemPrefeitura">
+      <img src="images/BRASAO_PREF_SERRA_VERTICAL_NEGATIVA.png" alt="Logo Prefeitura da Serra" width="100%">
+    </div>
+    <div class="login">
+      <label for="email" id="emailLabel">E-mail: </label>
+      <input type="email" name="email" id="email">
+      <label for="senha" id="senhaLabel">Senha: </label>
+      <input type="password" name="senha" id="senha">
+      <br>
+      <div class="rememberMe">
+        <input type="checkbox" name="lembredemim" id="rememberMe">
+        <label for="lembredemim">Lembre de mim</label>
+        <br><br>
+      </div>
+      <div class="entrar">
+        <button id="login" onclick="logar()" class="botao">Entrar</button>
+        <button id="abrirModal">Esqueci minha senha</button>
+      </div>
+      <br>
+      <div class="ou">
+        <span>ou entrar usando:</span>
+      </div>
+      <br>
+      <button id="facebook" onclick="facebook()" class="botao">Facebook</button>
+      <button id="google" onclick="google()" class="botao">Google</button>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <p>
+      © SEICIT/SUBTI - Subsecretaria de Tecnologia da Informação<br>
+      Rua Maestro Antônio Cícero, 111, Caçaroca, Prefeitura, Serra/ES, CEP 29176-11
+    </p>
+  </footer>
+  <script src="login.js"></script>
+</body>
+
+</html>
